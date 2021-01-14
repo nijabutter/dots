@@ -1,0 +1,51 @@
+call plug#begin()
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdtree'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-surround'
+Plug 'frazrepo/vim-rainbow'
+Plug 'preservim/nerdcommenter'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'machakann/vim-sandwich'
+Plug 'jacoborus/tender.vim'
+Plug 'dikiaap/minimalist'
+Plug 'chrisbra/Colorizer'
+Plug 'pgavlin/pulumi.vim'
+Plug 'morhetz/gruvbox'
+call plug#end()
+filetype plugin on
+map <C-a> :NERDTreeToggle<CR>
+map <C-s> :w<CR>
+
+syntax enable
+filetype on
+set number
+set ruler
+set wrap
+set hlsearch
+set incsearch
+set smarttab
+set smartcase
+set ignorecase
+set cindent
+set expandtab
+set autoindent
+set showcmd
+color hybrid
+
+let g:coc_global_extensions = [
+	\ 'coc-snippets',
+	\ 'coc-pairs',
+	\ 'coc-eslint',
+	\ 'coc-prettier',
+	\ 'coc-json',
+	\ ]
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+set hidden
+set cmdheight=2
+set updatetime=300
+

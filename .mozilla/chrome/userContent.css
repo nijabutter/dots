@@ -1,0 +1,14 @@
+:root {
+  /* Afterglow */
+  /* --color-about-blank: #1a1a1a; */
+  /* Gruvbox */
+  /* --color-about-blank: #282828; */
+  /* Onedark */
+  --color-about-blank: #181818;
+}
+
+@-moz-document url-prefix(about:blank) {
+  * {
+    background-color: var(--color-about-blank) !important;
+  }
+}

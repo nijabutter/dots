@@ -1,0 +1,24 @@
+@import "/home/rb/.config/firefox/fonts/RobotoMono.css";
+
+@import "/home/rb/.config/firefox/colors/colors.css";
+@import "/home/rb/.config/firefox/colorschemes/gruvbox.css";
+
+@import "/home/rb/.config/firefox/tab_bar/debloat_tab_bar.css";
+@import "/home/rb/.config/firefox/tab_bar/tabs_layout.css";
+@import "/home/rb/.config/firefox/tab_bar/tabs_fill_available_width.css";
+@import "/home/rb/.config/firefox/tab_bar/numbered_tabs.css";
+@import "/home/rb/.config/firefox/tab_bar/tab_close_button_always_on_hover.css";
+@import "/home/rb/.config/firefox/tab_bar/hide_tabs_with_one_tab.css";
+
+@import "/home/rb/.config/firefox/navbar/debloat_navbar.css";
+@import "/home/rb/.config/firefox/navbar/navbar_layout.css";
+@import "/home/rb/.config/firefox/navbar/navbar_on_focus.css";
+
+@import "/home/rb/.config/firefox/urlbar/debloat_urlbar.css";
+@import "/home/rb/.config/firefox/urlbar/urlbar_layout.css";
+@import "/home/rb/.config/firefox/urlbar/remove_megabar.css";
+
+@import "/home/rb/.config/firefox/sidebar/debloat_sidebar.css";
+@import "/home/rb/.config/firefox/sidebar/sidebar_layout.css";
+
+@import "/home/rb/.config/firefox/context_menu/context_menu.css"

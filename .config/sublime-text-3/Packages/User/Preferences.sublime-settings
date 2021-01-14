@@ -1,0 +1,10 @@
+{
+	"color_scheme": "Packages/Theme - Gravity/One Dark Gravity.sublime-color-scheme",
+	"font_face": "Source Code Pro Semibold",
+	"font_size": 14,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Adaptive.sublime-theme"
+}

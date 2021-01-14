@@ -1,0 +1,106 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator
+
+env:
+  TERM: xterm-256color
+
+window.dimensions:
+  columns: 84
+  lines: 24
+
+window:
+   padding:
+           x: 10
+           y: 10
+
+# When true, bold text is drawn using the bright variant of colors.
+draw_bold_text_with_bright_colors: false
+
+font:
+  normal:
+    #family: terminus
+    #family: scientifica
+    #family: Misc Tamsyn
+    family: Source Code Pro 
+    style: Semibold
+  bold:
+    #family: xos4 Terminus
+    #family: Misc Ohsnapu
+    #family: Misc Tamsyn
+    #family: scientific
+    family: Source Code Pro
+    style: Bold
+  italic:
+    #family: xos4 Terminus
+    #family : Misc Ohsnapu
+    #family: Misc Tamsyn
+    #family: scientifica
+    style: Italic
+  size: 13.0
+
+  offset:
+    x: 0
+    y: 0
+  glyph_offse:
+    x: 0
+    y: 0
+
+colors:
+  primary:
+    background: '0x181818'
+    foreground: '0xd8d8d8'
+
+  # Normal colors
+  normal:
+    black:   '0x383e4e'
+    red:     '0xbf616a'
+    green:   '0xa3be8c'
+    yellow:  '0xebcb8b'
+    blue:    '0x81a1c1'
+    magenta: '0xb48ead'
+    cyan:    '0x88c0d0'
+    white:   '0xe5e9f0'
+    grey:    '0x666666'
+
+  bright:
+    black:   '0x383e4e'
+    red:     '0xbf616a'
+    green:   '0xa3be8c'
+    yellow:  '0xebcb8b'
+    blue:    '0x81a1c1'
+    magenta: '0xb48ead'
+    cyan:    '0x88c0d0'
+    white:   '0xe5e9f0'
+    grey:    '0x666666'
+
+background_opacity: 1.0
+
+mouse_bindings:
+  - { mouse: Middle, action: Paste}
+mouse:
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
+
+hide_cursor_when_typing: false # xbanish already does this in a global scale
+cursor_style: Block
+live_config_reload: true
+
+key_bindings:
+  # (Windows, Linux, and BSD only)
+  - { key: V,        mods: Control|Shift, action: Paste            }
+  - { key: C,        mods: Control|Shift, action: Copy             }
+  - { key: Insert,   mods: Shift,         action: PasteSelection   }
+  - { key: Key0,     mods: Control,       action: ResetFontSize    }
+  - { key: Equals,   mods: Control,       action: IncreaseFontSize }
+  - { key: Plus,      mods: Control,       action: IncreaseFontSize }
+  - { key: Minus, mods: Control,       action: DecreaseFontSize }
+
+  - { key: Paste,                    action: Paste                            }
+  - { key: Copy,                     action: Copy                             }
+  - { key: L,         mods: Control, action: ClearLogNotice                   }
+  - { key: L,         mods: Control, chars: "\x0c"                            }
+  - { key: PageUp,    mods: Shift,   action: ScrollPageUp,   mode: ~Alt       }
+  - { key: PageDown,  mods: Shift,   action: ScrollPageDown, mode: ~Alt       }
+  - { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
+  - { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }

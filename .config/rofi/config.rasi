@@ -1,0 +1,75 @@
+configuration {
+  location: 0;
+  yoffset: 0;
+  xoffset: 0;
+  lines: 4;
+  font: "Roboto Bold 10";
+  icon-theme: "Papirus";
+  show-icons: false;
+  width: 270;
+  columns: 1;
+}
+
+@import "colors.rasi"
+
+* {
+  transparent: #00000000;
+  background-color: @transparent;
+  text-color: @foreground;
+  selected-bg: @selected-bg;
+  selected-fg: @selected;
+  border-color: #1e242eB3;
+  spacing: 0;
+}
+
+
+window {
+  border-radius: 3px;
+  background-color: @background;
+}
+
+inputbar {
+  border: 0 0 0px 0;
+  children: [prompt,entry];
+}
+
+prompt {
+  text-color: @selected-fg;
+  padding: 15px 0px 15px 15px;
+  border: 0 0px 0 0;
+}
+
+textbox {
+  background-color: @background-color;
+  border: 0 0 0px 0;
+  border-color: @border-color;
+}
+
+entry {
+  text-color: @selected-fg;
+  padding: 15px 0px 0px 10px;
+}
+
+listview {
+  cycle: false;
+  margin: 0 0 -1px 0;
+  scrollbar: true;
+}
+
+scrollbar {
+  background-color: @transparent;
+  handle-color: @selected-bg;
+  handle-width: 5px;
+}
+
+element {
+  background-color: @transparent;
+  border: 0 0 0px 0;
+  padding: 15px;
+}
+
+element selected {
+  background-color: @selected-bg;
+  text-color: @selected-fg;
+}
+

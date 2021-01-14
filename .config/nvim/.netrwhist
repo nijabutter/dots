@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/rb/.config'
+let g:netrw_dirhist_0='/home/rb'
+let g:netrw_dirhist_9='/home/rb/.vim'
+let g:netrw_dirhist_8='/home/rb/.mozilla/firefox/60hw3uzy.default-release/chrome'
+let g:netrw_dirhist_7='/home/rb/.config/firefox/fonts'
+let g:netrw_dirhist_6='/home/rb/.config/firefox'
+let g:netrw_dirhist_5='/home/rb/.config/firefox/urlbar'
+let g:netrw_dirhist_4='/home/rb/.mozilla/firefox/60hw3uzy.default-release/chrome'
+let g:netrw_dirhist_3='/home/rb/.config/sway'
+let g:netrw_dirhist_2='/home/rb/.config'
