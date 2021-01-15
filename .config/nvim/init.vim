@@ -34,7 +34,10 @@ set cindent
 set expandtab
 set autoindent
 set showcmd
-color hybrid
+set tabstop=4
+set softtabstop=0
+set shiftwidth=4
+color minimalist 
 
 let g:coc_global_extensions = [
 	\ 'coc-snippets',
