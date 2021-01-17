@@ -17,17 +17,17 @@ draw_bold_text_with_bright_colors: false
 
 font:
   normal:
-    #family: terminus
+    family: terminus
     #family: scientifica
     #family: Misc Tamsyn
-    family: Source Code Pro 
-    style: Semibold
+    #family: Dina 
+    style: Regular 
   bold:
-    #family: xos4 Terminus
+    family: xos4 Terminus
     #family: Misc Ohsnapu
     #family: Misc Tamsyn
     #family: scientific
-    family: Source Code Pro
+    # family: Dina
     style: Bold
   italic:
     #family: xos4 Terminus
@@ -44,9 +44,13 @@ font:
     x: 0
     y: 0
 
+# Colors (Gruvbox dark)
 colors:
+  # Default colors
   primary:
+    # hard contrast: background = '0x1d2021'
     background: '0x181818'
+    # soft contrast: background = '0x32302f'
     foreground: '0xd8d8d8'
 
   # Normal colors
@@ -61,6 +65,7 @@ colors:
     white:   '0xe5e9f0'
     grey:    '0x666666'
 
+  # Bright colors
   bright:
     black:   '0x383e4e'
     red:     '0xbf616a'
@@ -72,6 +77,7 @@ colors:
     white:   '0xe5e9f0'
     grey:    '0x666666'
 
+# Background opacity
 background_opacity: 1.0
 
 mouse_bindings:
