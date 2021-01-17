@@ -15,6 +15,7 @@ Plug 'dikiaap/minimalist'
 Plug 'chrisbra/Colorizer'
 Plug 'pgavlin/pulumi.vim'
 Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-commentary'
 call plug#end()
 filetype plugin on
 map <C-a> :NERDTreeToggle<CR>
@@ -51,4 +52,8 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 set hidden
 set cmdheight=2
 set updatetime=300
+
+xmap <C-\> gc
+
+
 
