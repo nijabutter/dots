@@ -27,10 +27,16 @@ default_border pixel 1
 smart_gaps on
 gaps inner 5
 gaps outer -4
-client.focused #666666 #666666 #666666 #666666 #666666
+
 client.unfocused #282828  #282828 #282828 #282828 #282828
+
+# Dark
+client.focused #666666 #666666 #666666 #666666 #666666
 client.focused_inactive #333333 #333333 #333333 #333333 #333333
 
+# Gruvbox
+#client.focused #ebdbb2 #ebdbb2 #ebdbb2 #ebdbb2 #ebdbb2
+#client.focused_inactive #453a3a #453a3a #453a3a #453a3a #453a3a
 
 #
 # Exec
