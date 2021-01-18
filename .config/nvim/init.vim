@@ -54,6 +54,7 @@ set cmdheight=2
 set updatetime=300
 
 xmap <C-\> gc
-
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 
