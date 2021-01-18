@@ -2,8 +2,9 @@
 ; Dark
 background = #181818
 foreground = #d8d8d8
-foreground-selected = #d8d8d8
-accent = #666666
+foreground-selected = #fff
+background-selected = #383838
+accent = #666
 
 ; Gruvbox
 ;background = #282828
@@ -240,7 +241,7 @@ label-mode-foreground = ${colors.foreground}
 
 label-focused = %index%
 ;label-focused-background = ${module/bspwm.label-focused-background}
-label-focused-background = ${colors.accent}
+label-focused-background = ${colors.background-selected}
 ;label-focused-foreground = ${module/bspwm.label-focused-foreground}
 label-focused-foreground = ${colors.foreground-selected}
 label-focused-overline= ${module/bspwm.label-focused-overline}
