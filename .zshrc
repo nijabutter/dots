@@ -43,7 +43,8 @@ alias py="python3"
 alias ytdl="youtube-dl"
 alias hex="hexdump -C"
 alias cls="clear"
-alias ka='killall'
+alias pdf="mupdf"
+alias del="sudo rm -r"
 # Dirs
 alias ...="../.."
 alias ....="../../../"
@@ -57,5 +58,7 @@ alias update='sudo pacman -Syu --noconfirm'
 alias sp='sudo pacman'
 # Scripts
 alias colortest='$HOME/.scripts/colortest.sh'
+alias upload='$HOME/.scripts/upload.sh'
+alias download='$HOME/.scripts/download.sh'
 # Get Public IP
 alias getip="curl -s https://myexternalip.com/raw"
