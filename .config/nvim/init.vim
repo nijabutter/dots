@@ -14,7 +14,7 @@ Plug 'jacoborus/tender.vim'
 Plug 'dikiaap/minimalist'
 Plug 'chrisbra/Colorizer'
 Plug 'pgavlin/pulumi.vim'
-Plug 'morhetz/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 Plug 'tpope/vim-commentary'
 call plug#end()
 filetype plugin on
@@ -38,7 +38,9 @@ set showcmd
 set tabstop=4
 set softtabstop=0
 set shiftwidth=4
-color minimalist 
+set nohlsearch
+color minimalist
+highlight Normal ctermbg=none
 
 let g:coc_global_extensions = [
 	\ 'coc-snippets',
@@ -53,6 +55,7 @@ set hidden
 set cmdheight=2
 set updatetime=300
 
+let mapleader = " "
 xmap <C-\> gc
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
