@@ -1,0 +1,9 @@
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+LC_ALL="en_GB.UTF-8"
+QT_QPA_PLATFORMTHEME=qt5ct
+GTK_THTME=Adwaita:dark
+__GL_SYNC_DISPLAY_DEVICE=DP-0
