@@ -12,15 +12,15 @@ shade8: #FFE082;
 @import "colors.rasi"
 
 * {
-    background:         @shade1;
-    foreground:         @shade2;
-    selected:           @shade3;
-    selected-bg:        @shade4;
-    border:             @shade5;
-    border-alt:         @shade6;
-    background-alt:     @shade7;
-    urgent:             #DA4453;
-    accent:             #6b90c5;
-    on:                 #88bd8d;
-    off:                #ff8080;
+    background:                     @shade1;
+    foreground:                     @shade2;
+    selected:               		@shade3;
+    selected-bg:               		@shade4;
+    border:               			@shade5;
+    border-alt:               		@shade6;
+    background-alt:                 @shade7;
+    urgent:                         #DA4453;
+    accent:                         #6b90c5;
+    on:                             #88bd8d;
+    off:                            #ff8080;
 }
