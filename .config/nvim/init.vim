@@ -41,7 +41,7 @@ set softtabstop=0
 set shiftwidth=4
 set nohlsearch
 color minimalist
-highlight Normal ctermbg=none
+hi Normal guibg=None ctermbg=None
 
 let g:coc_global_extensions = [
 	\ 'coc-snippets',
