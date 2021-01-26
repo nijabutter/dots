@@ -17,13 +17,13 @@ draw_bold_text_with_bright_colors: false
 
 font:
   normal:
-    family: terminus
+    family: Ubuntu Mono
     #family: scientifica
     #family: Misc Tamsyn
     #family: Dina 
     style: Regular 
   bold:
-    family: terminus
+    family: Ubuntu Mono
     #family: Misc Ohsnapu
     #family: Misc Tamsyn
     #family: scientific
