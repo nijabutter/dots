@@ -8,16 +8,10 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 setxkbmap gb &
 xset m 0 0
 xrandr --output DP-0 --mode 1920x1080 --rate 144.0
-
+xinput --set-prop 8 300 -0.7
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
-
-
-
-
-
-
 
     xrdb -merge $sysresources
 
