@@ -41,8 +41,7 @@ set softtabstop=0
 set shiftwidth=4
 set nohlsearch
 color minimalist
-hi Normal guibg=None ctermbg=None
-
+hi Normal guibg=NONE ctermbg=NONE
 let g:coc_global_extensions = [
 	\ 'coc-snippets',
 	\ 'coc-pairs',
@@ -55,7 +54,6 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 set hidden
 set cmdheight=2
 set updatetime=300
-
 let mapleader = " "
 xmap <C-\> gc
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"

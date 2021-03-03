@@ -17,13 +17,13 @@ draw_bold_text_with_bright_colors: false
 
 font:
   normal:
-    family: SFMono Nerd Font Mono
+    family: Menlo for Powerline
     #family: scientifica
     #family: Misc Tamsyn
     #family: Dina 
     style: Regular 
   bold:
-    family: SFMono Nerd Font Mono
+    family: Menlo for Powerline
     #family: Misc Ohsnapu
     #family: Misc Tamsyn
     #family: scientific

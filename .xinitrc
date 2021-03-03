@@ -8,7 +8,9 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 setxkbmap gb &
 xset m 0 0
 xrandr --output DP-0 --mode 1920x1080 --rate 144.0
-xinput --set-prop 8 300 -0.7
+xinput --set-prop "SINOWEALTH Wired Gaming Mouse" "libinput Accel Speed" -0.7
+xsetwacom --set "Wacom Intuos2 6x8 Pen stylus" Area "0 0 30480 24360"
+xsetwacom --set "Wacom Intuos2 6x8 Pen stylus" Mode "Relative"
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
@@ -47,5 +49,5 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 nitrogen --restore &
-picom --vsync --no-fading-openclose -i 1.0 -e 1.0 -I 1.0 -O 1.0 -D 0 -m 1.0 &
+picom --vsync --blur-background-fixed --no-fading-openclose -i 1.0 -e 1.0 -I 1.0 -O 1.0 -D 0 -m 1.0 &
 exec i3
