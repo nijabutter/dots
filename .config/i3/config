@@ -30,7 +30,7 @@ gaps outer 0
 client.unfocused #282828  #282828 #282828 #282828 #282828
 
 # Dark
-client.focused #1f2329 #1f2329 #1f2329 #1f2329 #1f2329
+client.focused #3a5059 #3a5059 #3a5059 #3a5059 #3a5059
 client.focused_inactive #333333 #333333 #333333 #333333 #333333
 
 # Gruvbox

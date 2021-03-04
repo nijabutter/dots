@@ -12,8 +12,8 @@ accent = #666
 ;foreground-selected = #ebdbb2
 ;accent = #ebdbb2
 
-;linecolor = #8178a5
-;bordercolor = #36243e
+linecolor = #3a5059
+bordercolor = #36243e
 
 [settings]
 screenchange-reload = true
