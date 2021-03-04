@@ -21,7 +21,7 @@ set $ws10 "10"
 #
 # Styles
 #
-font pango:RobotoMono Nerd Font Mono 14
+font pango:cherry 10px
 default_border pixel 1
 smart_gaps on
 gaps inner 0
