@@ -63,6 +63,7 @@ floating_modifier $mod
 bindsym $mod+Shift+b exec firefox
 bindsym $mod+Return exec $term
 bindsym $mod+d exec rofi -show drun
+bindsym $mod+Shift+f exec thunar
 bindsym $mod+w kill
 bindsym $mod+r mode "resize"
 
