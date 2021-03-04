@@ -13,6 +13,7 @@ This is also where the polybar launch.sh is called
 | Shift+Print Screen | Like a snipping tool, draw a rectangle and take a screenshot of the area. Then saves and copies the screenshot like above |
 | mod+Shift+b | Open firefox |
 | mod+Return | Open a terminal |
+| mod+Shift+f | Open thunar |
 | mod+d | Launch rofi |
 | mod+r | Change to resize mod |
 | Audio keys | Call playerctl to handle audio |
