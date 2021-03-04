@@ -1,10 +1,8 @@
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-export FTP_PASS="EHEq2KN!F"
 if [ "$(tty)" = "/dev/tty1" ]; then
 	startx
 fi
-
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/rb/.oh-my-zsh"
@@ -45,9 +43,6 @@ alias hex="hexdump -C"
 alias cls="clear"
 alias pdf="mupdf"
 alias del="sudo rm -r"
-# Dirs
-alias ...="../.."
-alias ....="../../../"
 # Git
 alias add="git add"
 alias commit="git commit -m"
