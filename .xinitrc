@@ -11,6 +11,7 @@ xrandr --output DP-0 --mode 1920x1080 --rate 144.0
 xinput --set-prop "SINOWEALTH Wired Gaming Mouse" "libinput Accel Speed" -0.7
 xsetwacom --set "Wacom Intuos2 6x8 Pen stylus" Area "0 0 30480 24360"
 xsetwacom --set "Wacom Intuos2 6x8 Pen stylus" Mode "Relative"
+xrandr --dpi 96
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
