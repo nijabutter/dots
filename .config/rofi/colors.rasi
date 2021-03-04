@@ -9,7 +9,6 @@ shade7: #FFD54F;
 shade8: #FFE082;
 }
 
-@import "colors.rasi"
 
 * {
     background:                     @shade1;
