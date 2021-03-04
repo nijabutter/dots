@@ -2,6 +2,15 @@
 
 Arch linux rice
 
+## Where things belong
+
+The majority of files assume they are currently in the home directory however a few will require to be moved.
+
+| File | Move it to |
+| ---- | ---------- |
+| xorg.conf | `/etc/X11/` |
+| environment | `/etc/` |
+
 ##### Installing things
 
 - yay
