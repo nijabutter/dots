@@ -17,6 +17,7 @@ Plug 'chrisbra/Colorizer'
 Plug 'pgavlin/pulumi.vim'
 Plug 'gruvbox-community/gruvbox'
 Plug 'tpope/vim-commentary'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 call plug#end()
 filetype plugin on
 map <C-a> :NERDTreeToggle<CR>
@@ -40,8 +41,9 @@ set tabstop=4
 set softtabstop=0
 set shiftwidth=4
 set nohlsearch
-color minimalist
-hi Normal guibg=NONE ctermbg=NONE
+" color minimalist
+color material
+" hi Normal guibg=NONE ctermbg=NONE
 let g:coc_global_extensions = [
 	\ 'coc-snippets',
 	\ 'coc-pairs',
