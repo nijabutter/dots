@@ -43,7 +43,7 @@ set shiftwidth=4
 set nohlsearch
 " color minimalist
 color material
-hi MatchParen cterm=none ctermbg=darkgrey ctermfg=white
+hi MatchParen cterm=bold ctermbg=darkgrey ctermfg=white
 " hi Normal guibg=NONE ctermbg=NONE
 let g:coc_global_extensions = [
 	\ 'coc-snippets',
