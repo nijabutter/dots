@@ -1,3 +1,4 @@
+# Script to install emoji font and enable it
 set -e
 if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 echo "Setting up Noto Emoji font..."
