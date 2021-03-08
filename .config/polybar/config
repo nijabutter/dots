@@ -3,7 +3,7 @@
 background = #181818
 foreground = #d8d8d8
 foreground-selected = #fff
-background-selected = #383838
+background-selected = #3a5059
 accent = #666
 
 ; Gruvbox
