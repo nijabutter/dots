@@ -58,8 +58,6 @@ set hidden
 set cmdheight=2
 set updatetime=300
 let mapleader = " "
-xmap <C-\> gc
+map <C-\> gcc
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-
