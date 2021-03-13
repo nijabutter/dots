@@ -17,13 +17,13 @@ draw_bold_text_with_bright_colors: false
 
 font:
   normal:
-    family: Menlo for Powerline
+    family: Fira Code
     #family: scientifica
     #family: Misc Tamsyn
     #family: Dina 
     style: Regular 
   bold:
-    family: Menlo for Powerline
+    family: Fira Code
     #family: Misc Ohsnapu
     #family: Misc Tamsyn
     #family: scientific
