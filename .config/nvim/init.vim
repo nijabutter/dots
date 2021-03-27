@@ -1,6 +1,6 @@
 " test symlink
 call plug#begin()
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install()}}
 Plug 'preservim/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
@@ -8,14 +8,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround'
 Plug 'frazrepo/vim-rainbow'
-Plug 'preservim/nerdcommenter'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-Plug 'machakann/vim-sandwich'
-Plug 'jacoborus/tender.vim'
-Plug 'dikiaap/minimalist'
 Plug 'chrisbra/Colorizer'
-Plug 'pgavlin/pulumi.vim'
-Plug 'gruvbox-community/gruvbox'
 Plug 'tpope/vim-commentary'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 call plug#end()
@@ -41,10 +35,11 @@ set tabstop=4
 set softtabstop=0
 set shiftwidth=4
 set nohlsearch
-" color minimalist
+
 color material
+
 hi MatchParen cterm=bold ctermbg=darkgrey ctermfg=white
-" hi Normal guibg=NONE ctermbg=NONE
+let g:rainbow_active = 1
 let g:coc_global_extensions = [
 	\ 'coc-snippets',
 	\ 'coc-pairs',
@@ -53,7 +48,6 @@ let g:coc_global_extensions = [
 	\ 'coc-json',
 	\ ]
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
-
 set hidden
 set cmdheight=2
 set updatetime=300
