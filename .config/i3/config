@@ -21,8 +21,8 @@ set $ws10 "10"
 #
 # Styles
 #
-font pango:cherry 10px
-default_border pixel 1
+font pango:monospace 10px
+default_border pixel 2
 smart_gaps on
 gaps inner 0
 gaps outer 0
