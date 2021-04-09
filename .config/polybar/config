@@ -73,7 +73,7 @@ font-2 = unifont:size=16;1
 
 modules-left = i3
 modules-center = xwindow
-modules-right = volume wired battery memory cpu fs-root date
+modules-right = volume wired battery memory cpu fs-root date time
 
 tray-position = right
 tray-padding = 4
@@ -122,7 +122,7 @@ modules-left = bspwm i3
 ;modules-left = xwindow
 ;modules-center = xwindow
 modules-center =
-modules-right = github fs-root date power-menu
+modules-right = github fs-root date time power-menu
 
 wm-restack = ${bar/top.wm-restack}
 
@@ -313,10 +313,14 @@ label-connected = %local_ip%
 ;label-disconnected-foreground = #999
 
 [module/date]
-type = internal/date
-label = %{F${colors.accent}%{F-} %date%  %{F${colors.accent}%{F-} %time%
-date = %d-%m-%Y
-time = %H:%M
+type=custom/script
+exec = date +%D
+label = %{F${colors.accent}%{F-} %output%
+
+[module/time]
+type = custom/script
+exec = date +%H:%M
+label = %{F${colors.accent}%{F-} %output%
 interval = 5
 
 [module/xbacklight]
