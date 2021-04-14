@@ -13,6 +13,10 @@ The majority of files assume they are currently in the home directory however a 
 
 ##### Installing things
 
+Set the time properly
+
+`timedatectl set-ntp true`
+
 - yay
 
 `sudo pacman -S --needed git base-devel`
