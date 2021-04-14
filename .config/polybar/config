@@ -314,7 +314,7 @@ label-connected = %local_ip%
 
 [module/date]
 type=custom/script
-exec = date +%D
+exec = date -u +%d-%m-%Y
 label = %{F${colors.accent}%{F-} %output%
 
 [module/time]
