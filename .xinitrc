@@ -50,5 +50,5 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 nitrogen --restore &
-picom --vsync --blur-background-fixed --no-fading-openclose -i 1.0 -e 1.0 -I 1.0 -O 1.0 -D 0 -m 1.0 &
+picom --experimental-backends --backend glx --xrender-sync-fence --no-fading-openclose -i 1.0 -e 1.0 -I 1.0 -O 1.0 -D 0 -m 1.0 &
 exec i3
