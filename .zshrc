@@ -1,7 +1,7 @@
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 if [ "$(tty)" = "/dev/tty1" ]; then
-	startx
+	ssh-agent startx
 fi
 
 # Path to your oh-my-zsh installation.
