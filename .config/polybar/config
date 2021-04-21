@@ -1,9 +1,9 @@
 [colors]
 ; Dark
-background = #181818
+background = #121212
 foreground = #d8d8d8
 foreground-selected = #fff
-background-selected = #3a5059
+background-selected = #282828
 accent = #666
 
 ; Gruvbox
@@ -52,8 +52,9 @@ foreground = ${colors.foreground}
 ;background-6 = ${self.background-1}
 ;background-7 = #111
 
-line-color = ${colors.linecolor}
-underline-size = 1
+;line-color = ${colors.linecolor}
+;overline-color = $
+;underline-size = 1
 overline-size = 2
 
 ;border-size = 5
@@ -95,7 +96,7 @@ cursor-click = pointer
 scroll-up = i3.next
 scroll-down = i3.prev
 ;double-click-left = notify-send -u low doubleclick
-;double-click-right = notify-send -u low doubleclick2
+;double-click-right = notify-send -u low double;lick2
 
 # bar/module specific vars
 bspwm-focused-overline = ${colors.linecolor}
