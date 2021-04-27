@@ -12,6 +12,8 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'chrisbra/Colorizer'
 Plug 'tpope/vim-commentary'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+Plug 'Yggdroot/indentLine'
+
 call plug#end()
 filetype plugin on
 map <C-a> :NERDTreeToggle<CR>
