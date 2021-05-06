@@ -59,6 +59,9 @@ bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~
 # Selection screenshot
 bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`'
 
+bindsym $mod+Shift+m exec ~/.scripts/mount-drives.sh
+bindsym $mod+Shift+u exec ~/.scripts/mount-drives.sh -u
+
 floating_modifier $mod
 bindsym $mod+Shift+b exec firefox
 bindsym $mod+Return exec $term
