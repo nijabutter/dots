@@ -1,15 +1,15 @@
 :root {
-  --color-unfocused-tabs-bg: #222;
-  --color-unfocused-tabs-fg: #eee;
-  --color-focused-tabs-bg: #383838;
-  --color-focused-tabs-fg: #eee;
+  --color-unfocused-tabs-bg: #181A1F;
+  --color-unfocused-tabs-fg: #A9B2C3;
+  --color-focused-tabs-bg: #21252B;
+  --color-focused-tabs-fg: #C6CCD7;
   --color-urlbar-separator: #383838;
-  --color-urlbar-bg: #222;
-  --color-urlbar-fg: #eee;
-  --color-urlbar-popup-url: #383838;
-  --color-urlbar-selected-bg: #383838;
+  --color-urlbar-bg: #181A1F;
+  --color-urlbar-fg: #C6CCD7;
+  --color-urlbar-popup-url: ##A9B2C3;
+  --color-urlbar-selected-bg: #21252B;
   --color-urlbar-selected-fg: #eee;
   --color-urlbar-selected-popup-url: #fff;
-  --color-sidebar-bg: #3c3836;
-  --color-sidebar-fg: #eee;
+  --color-sidebar-bg: #181A1F;
+  --color-sidebar-fg: #A9B2C3;
 }

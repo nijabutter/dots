@@ -1,109 +1,52 @@
-# Configuration for Alacritty, the GPU enhanced terminal emulator
-
-env:
-  TERM: xterm-256color
-
-window.dimensions:
-  columns: 84
-  lines: 24
-
 window:
-   padding:
-           x: 5
-           y: 5
-
-# When true, bold text is drawn using the bright variant of colors.
-draw_bold_text_with_bright_colors: false
+  padding:
+    x: 2
+    y: 2
 
 font:
   normal:
-    family: Liberation Mono
-    #family: scientifica
-    #family: Misc Tamsyn
-    #family: Dina 
-    style: Regular 
+    # family: PxPlus IBM MDA
+    family: JetBrainsMono Nerd Font
   bold:
-    family: Liberation Mono
-    #family: Misc Ohsnapu
-    #family: Misc Tamsyn
-    #family: scientific
-    # family: Dina
+    #family: monospace
     style: Bold
   italic:
-    #family: xos4 Terminus
-    #family : Misc Ohsnapu
-    #family: Misc Tamsyn
-    #family: scientifica
+    #family: monospace
     style: Italic
-  size: 12.0
+  bold_italic:
+    style: Bold Italic
 
-  offset:
-    x: 0
-    y: 0
-  glyph_offse:
-    x: 0
-    y: 0
+  size: 12
 
-# Dark
+draw_bold_text_with_bright_colors: true
+
 colors:
   primary:
-    background: '0x111217'
-    foreground: '0xc5c8c6'
+    background: '#181A1F'
+    foreground: '#c5c8c6'
 
-  # Normal colors
+  selection:
+    text: CellBackground
+    background: CellForeground
+
   normal:
-    black:   '0x282a2e'
-    red:     '0xa54242'
-    green:   '0xa3be8c'
-    yellow:  '0xde935f'
-    blue:    '0x5f819d'
-    magenta: '0x85678f'
-    cyan:    '0x5e8d87'
-    white:   '0x707880'
-    grey:    '0x666666'
+    black:   '#5F6672'
+    red:     '#E06C75'
+    green:   '#98C379'
+    yellow:  '#E5C07B'
+    blue:    '#61AFEF'
+    magenta: '#B57EDC'
+    cyan:    '#56B6C2'
+    white:   '#A9B2C3'
 
-  # Bright colors
   bright:
-    black:   '0x555b65'
-    red:     '0xcc6666'
-    green:   '0xb5bd68'
-    yellow:  '0xffeac3'
-    blue:    '0x81a2be'
-    magenta: '0xb294bb'
-    cyan:    '0x8abeb7'
-    white:   '0xc5c8c6'
-    grey:    '0x666666'
+    black:   '#5F6672'
+    red:     '#E06C75'
+    green:   '#98C379'
+    yellow:  '#E5C07B'
+    blue:    '#61AFEF'
+    magenta: '#B57EDC'
+    cyan:    '#56B6C2'
+    white:   '#A9B2C3'
 
-# Background opacity
-background_opacity: 0.85
-
-mouse_bindings:
-  - { mouse: Middle, action: Paste}
-mouse:
-  double_click: { threshold: 300 }
-  triple_click: { threshold: 300 }
-selection:
-  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
-
-hide_cursor_when_typing: false # xbanish already does this in a global scale
-cursor_style: Block
-live_config_reload: true
-
-key_bindings:
-  # (Windows, Linux, and BSD only)
-  - { key: V,        mods: Control|Shift, action: Paste            }
-  - { key: C,        mods: Control|Shift, action: Copy             }
-  - { key: Insert,   mods: Shift,         action: PasteSelection   }
-  - { key: Key0,     mods: Control,       action: ResetFontSize    }
-  - { key: Equals,   mods: Control,       action: IncreaseFontSize }
-  - { key: Plus,      mods: Control,       action: IncreaseFontSize }
-  - { key: Minus, mods: Control,       action: DecreaseFontSize }
-
-  - { key: Paste,                    action: Paste                            }
-  - { key: Copy,                     action: Copy                             }
-  - { key: L,         mods: Control, action: ClearLogNotice                   }
-  - { key: L,         mods: Control, chars: "\x0c"                            }
-  - { key: PageUp,    mods: Shift,   action: ScrollPageUp,   mode: ~Alt       }
-  - { key: PageDown,  mods: Shift,   action: ScrollPageDown, mode: ~Alt       }
-  - { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
-  - { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
+background_opacity: 1.0

@@ -1,31 +1,16 @@
 [colors]
 ; Dark
-background = #121212
-foreground = #d8d8d8
+background = #181A1F
+foreground = #A9B2C3
 foreground-selected = #fff
-background-selected = #282828
-accent = #666
+background-selected = #21252B
+accent = #5F6672
 
-; Gruvbox
-;background = #282828
-;foreground = #d8d8d8
-;foreground-selected = #ebdbb2
-;accent = #ebdbb2
-
-linecolor = #3a5059
+linecolor = #5F6672
 bordercolor = #36243e
 
 [settings]
 screenchange-reload = true
-;throttle-output-for = 10
-;throttle-output = 5
-;throttle-input-for = 40
-
-;compositing-background = over
-;compositing-background = screen
-;compositing-foreground = xor
-;compositing-foreground = source
-;compositing-border = over
 
 [global/wm]
 margin-top = 0
@@ -35,10 +20,8 @@ margin-bottom = 0
 enable-ipc = true
 monitor = ${env:MONITOR:}
 width = 100%
-height = 24
-;radius = 5.0
-;fixed-center = false
-;override-redirect = true
+height = 18
+; radius = 5.0
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -68,13 +51,13 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = cherry:pixelsize=12;1
-font-1 = siji:pixelsize=12;1
+font-0 = cherry:pixelsize=9;1
+font-1 = siji:pixelsize=9;1
 font-2 = unifont:size=16;1
 
 modules-left = i3
 modules-center = xwindow
-modules-right = volume wired battery memory cpu fs-root date time
+modules-right = volume network fs-root battery memory cpu date time
 
 tray-position = right
 tray-padding = 4
@@ -123,7 +106,7 @@ modules-left = bspwm i3
 ;modules-left = xwindow
 ;modules-center = xwindow
 modules-center =
-modules-right = github fs-root date time power-menu
+modules-right = network fs-root date time power-menu
 
 wm-restack = ${bar/top.wm-restack}
 
@@ -147,7 +130,8 @@ label-foreground = #000
 [module/fs-root]
 type = internal/fs
 mount-0 = /
-label-mounted = %{F{colors.accent}%percentage_used%%%{F-} used of %mountpoint%
+; label-mounted = %{F{colors.accent}%percentage_used%%%{F-} used of %mountpoint%
+label-mounted = %mountpoint%: %used%/%total%
 
 [module/bspwm]
 type = internal/bspwm
@@ -298,6 +282,13 @@ ramp-signal-3 = 
 ramp-signal-4 = 
 ramp-signal-foreground = ${colors.accent}
 
+[module/network]
+type = internal/network
+interface = enp3s0
+interval = 1.0
+label-connected = " %downspeed%   %upspeed%  "
+label-disconnected = disconnected
+
 [module/wired]
 type = internal/network
 interface = enp3s0
@@ -356,6 +347,7 @@ ramp-volume-foreground = ${colors.accent}
 ramp-headphones-0 = 
 ramp-headphones-1 = 
 ramp-headphones-foreground = ${colors.accent}
+click-right = pavucontrol
 
 [module/battery]
 type = internal/battery

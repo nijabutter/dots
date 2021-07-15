@@ -49,5 +49,5 @@ Set the time properly
 
 `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
 
-![](./screenshots/screenshot_20210114_212258.png)
-![](./screenshots/screenshot_20210114_212537.png)
+![](./screenshots/1.png)
+![](./screenshots/2.png)
