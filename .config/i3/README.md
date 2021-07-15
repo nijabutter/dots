@@ -10,11 +10,12 @@ This is also where the polybar launch.sh is called
 | ----------- | ----------- |
 | Shift+mod+Del | Call `shutdown now` |
 | Print Screen | Takes a full desktop screenshot including all monitor, saves it to `~/Pictures/screenshots/screenshot_%Y%m%d_%H%M%S.png` and the copies the image to the clipboard |
-| Shift+Print Screen | Like a snipping tool, draw a rectangle and take a screenshot of the area. Then saves and copies the screenshot like above |
+| Shift+Print Screen | Launch fireshot or use scrot to draw a rectangle, take a screenshot, save and copy the screenshot like above |
 | mod+Shift+b | Open firefox |
 | mod+Return | Open a terminal |
 | mod+Shift+f | Open thunar |
 | mod+d | Launch rofi |
+| mod+m | Launch neomutt |
 | mod+r | Change to resize mod |
 | Audio keys | Call playerctl to handle audio |
 | mod+Arrow key | Change focused window accordingly |
