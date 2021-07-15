@@ -18,17 +18,17 @@ HIST_STAMPS="yyyy-mm-dd"
 
 plugins=(
 	git
-	colorize 
-	colored-man-pages 
-	pip 
-	sudo  
-	zsh-autosuggestions 
+	colorize
+	colored-man-pages
+	pip
+	sudo
+	zsh-autosuggestions
 	zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
 
-export LANG=en_US.UTF-8
+export LANG=en_GB.UTF-8
 
 export EDITOR='nvim'
 
@@ -52,6 +52,8 @@ alias remove='sudo pacman -R'
 alias update='sudo pacman -Syu --noconfirm'
 alias sp='sudo pacman'
 # Scripts
-alias colortest='$HOME/.scripts/colortest.sh'
 # Get Public IP
 alias getip="curl -s https://myexternalip.com/raw"
+alias clipboard="xclip -selection clipboard"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
