@@ -76,6 +76,7 @@ set background=dark
 "     \ "white": {"gui": "#f4f4f4", "cterm256": "255"},
 "     \}
 
+let g:vscode_style = "dark"
 colorscheme plastic
 
 "*****************************************************************************
@@ -150,6 +151,7 @@ endif
 """ Stolen from: https://github.com/viniciusgerevini/dotfiles/blob/master/vim/.vimrc (Thanks!)
 cnoreabbrev W! w!
 cnoreabbrev Q! q!
+cnoreabbrev X x
 cnoreabbrev Qall! qall!
 cnoreabbrev Wq wq
 cnoreabbrev Wa wa
@@ -158,7 +160,8 @@ cnoreabbrev WQ wq
 cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
-
+" Write to the file as root
+command! -nargs=0 Sw w !sudo tee % > /dev/null
 "*****************************************************************************
 "" Plugins Setup
 "*****************************************************************************"

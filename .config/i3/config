@@ -4,6 +4,7 @@
 #: Variables {{{
 # Modkey to windows/logo
 set $mod Mod4
+set $alt Mod1
 set $term alacritty
 set $ws1 "1"
 set $ws2 "2"
@@ -54,6 +55,7 @@ bindsym $mod+Shift+u exec ~/.scripts/mount-drives.sh -u
 bindsym $mod+Shift+b exec firefox
 bindsym $mod+Return exec $term
 bindsym $mod+d exec rofi -show drun
+bindsym $alt+Tab exec rofi -show window
 bindsym $mod+Shift+f exec thunar
 bindsym --release $mod+l exec slock
 bindsym $mod+m exec $term -e neomutt
